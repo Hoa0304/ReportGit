@@ -23,38 +23,7 @@ __28/03__/2023
 
 #### Use tags
 
-<details>
-<summary>Add Lightweigh tag</summary>
 
-<details>
-<summary>Add tag</summary>
-
-```
- $ git tag < tagname >
-```
-
-</details>
-
-<details>
-<summary>Tag command without parameters</summary>
-
-- Show tag list
-
-```
- $ git tag 
-```
-
-</details>
-
-<details>
-<summary>Show history</summary>
-
-```
- $ git log --decorate
-```
-
-
-</details>
 
 
 
@@ -84,7 +53,8 @@ __28/03__/2023
 <details>
 <summary>Show history  </summary>
 
-``` $ git log --decorate
+``` 
+$ git log --decorate
 ```
 
 </details>
@@ -97,7 +67,8 @@ __28/03__/2023
 <details>
 <summary>Add tag</summary>
 
-``` $ git tag -a < tagname >
+```
+ $ git tag -a < tagname >
 ```
 
 </details>
@@ -105,7 +76,8 @@ __28/03__/2023
 <details>
 <summary>Just created a tag and added a comment</summary>
 
-``` $ git tag -am "commit" < tagname >
+``` 
+$ git tag -am "commit" < tagname >
 ```
 
 </details>
@@ -114,7 +86,8 @@ __28/03__/2023
 <details>
 <summary>Displays a list of tags and comments.</summary>
 
-``` $ git tag -n
+``` 
+$ git tag -n
 ```
 
 </details>
@@ -127,7 +100,8 @@ __28/03__/2023
 <details>
 <summary>Delete tag</summary>
 
-``` $ git tag -d < tagname >
+``` 
+$ git tag -d < tagname >
 ```
 
 </details>
