@@ -106,11 +106,12 @@ $ git tag -d < tagname >
 
 </details>
 
-
+__29/03__/2023
 ## Chapter 8 : Aliases
 __Which greatly reduce the amount of typing you have to do.__
 <details>
 <summary>Create alias</sumamary>
+
 
 ```
 $ git config --global alias.<alias-name> '<git-command>'
@@ -118,7 +119,10 @@ $ git config --global alias.<alias-name> '<git-command>'
 
 > '<git-command>' Git command that you want to minify to alias.
 
+
 </details>
+
+
 
 <details>
 <summary>Create the st alias</summary>
@@ -129,7 +133,7 @@ $git config --global alias.st status
 
 </detail>
 
-</details>
+
 
 <details>
 <summary>Create a branch and 
@@ -144,7 +148,7 @@ $git config --global alias.cb checkout -b
 
 </detail>
 
-</details>
+
 
 <details>
 <summary>A lot commits everything and waits for a message</summary>
@@ -185,6 +189,31 @@ $git config --edit --global
 
 - Note :
 >  You can add aliases directly here if you like.
+>  If you are going to use more than one flag
+
+```
+$git config --global alias.nx "log --name-only --oneline"
+```
+
+</detail>
+
+<details>
+<summary>Summarry</summary>
+
+Aliases are a convenient way to shorten otherwise lengthy commands. You create an 
+alias with this sequence:
+-  Enter git
+-  Enter the keyword config
+-  Enter the flag --global
+-  Enter the keyword alias followed by a period and then the alias itself
+-  Enter the command you are aliasing
+You can access the configuration file directly with:
+
+```
+git config --edit --global
+```
+
+Aliases are simple, easy, and incredibly useful when working at the command line
 
 </detail>
 
