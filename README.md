@@ -197,6 +197,7 @@ $git config --global alias.nx "log --name-only --oneline"
 
 </detail>
 
+
 <details>
 <summary>Summarry</summary>
 
