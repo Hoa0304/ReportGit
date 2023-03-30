@@ -109,6 +109,8 @@ $ git tag -d < tagname >
 __29/03__/2023
 ## Chapter 8 : Aliases
 __Which greatly reduce the amount of typing you have to do.__
+
+
 <details>
 <summary>Create alias</sumamary>
 
@@ -117,7 +119,7 @@ __Which greatly reduce the amount of typing you have to do.__
 $ git config --global alias.<alias-name> '<git-command>'
 ```
 
-> '<git-command>' Git command that you want to minify to alias.
+> <git-command> Git command that you want to minify to alias.
 
 
 </details>
