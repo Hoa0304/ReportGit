@@ -109,6 +109,8 @@ $ git tag -d < tagname >
 __29/03__/2023
 ## Chapter 8 : Aliases
 __Which greatly reduce the amount of typing you have to do.__
+
+
 <details>
 <summary>Create alias</sumamary>
 
@@ -218,7 +220,26 @@ Aliases are simple, easy, and incredibly useful when working at the command line
 
 </detail>
 
+#### 30/03/2023
 ## Chapter 9 : Using the Log  
+
+<details>
+<summary>Log at the command line</summary>
+
+```
+$git log --oneline
+``` 
+
+</detail>
+
+<details>
+<summary>Which files changed?</summary>
+
+```
+$git log --name-only
+``` 
+
+</detail>
 
 <detail>
 <summary>Summary</summary>
