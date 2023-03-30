@@ -218,3 +218,11 @@ Aliases are simple, easy, and incredibly useful when working at the command line
 
 </detail>
 
+## Chapter 9 : Using the Log  
+
+<detail>
+<summary>Summary</summary>
+
+The log can show you when each commit was created, who created it, and other useful information about the commit, such as what changed in each file. You have great control over what is displayed
+
+</detail>
