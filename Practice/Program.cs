@@ -9,7 +9,11 @@ namespace trainningCong.git.ReportGit.Practice
     {
         static void Main(String[] args)
         {
-            Console.WriteLine("Hello World!");
+            var calculator = new Calculator();
+            Console.WriteLine($"Integer division of 23/4 is
+            {calculator.Divide(23, 4)}");
+            Console.WriteLine(
+            $"Modulus 23%4 is {calculator.Modulus(23, 4)}");
         }
     }
 }
