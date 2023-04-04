@@ -2,19 +2,39 @@
 __04/04__/2023
 ## Chapter 11
 ### Finding a Broken Commit: Bisect and Blame
-#### STASH
+#### BISECT
 
 
 <details>
-<summary>What is Stash ?</summary>
-
-- Is a place where you can hold (stash) files you've modified but not yet committed
-
+<summary>Start the search process</summary>
 
 ```
-$git push --mirror
+$git bisect start
 ```
 
->  Copy the entire content of a Git repository to another repository, including branches, tags, and commit history.
+-  Then, you need to specify the current last bad commit with the command :
+
+```
+$git bisect bad
+```
+
+- Next, you need to specify a previous commit that you know for sure is working properly with the command :
+
+```
+$git bisect good
+```
+
+</details>
+
+
+#### BLAME
+
+<details>
+<summary></summary>
+
+```
+
+```
+
 
 </details>
