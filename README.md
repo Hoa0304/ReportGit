@@ -67,7 +67,6 @@ $git bisect good
 <details>
 <summary>git rev-parse</summary>
 
-```
 
 - outputs the full SHA-1 hash of the current commit :
 
@@ -93,7 +92,6 @@ $git rev-parse v1.0.0
 $git rev-parse --symbolic-full-name HEAD
 ```
 
-```
 </details>
 
 
