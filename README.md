@@ -64,15 +64,43 @@ $git bisect good
 
 </details>
 
+<details>
+<summary>git rev-parse</summary>
 
 
-- Ignore whitespace changes when searching history :
+- outputs the full SHA-1 hash of the current commit :
+
+```
+$git rev-parse HEAD
+```
+
+- outputs the abbreviated SHA-1 hash of the current commit :
+
+```
+$git rev-parse --short HEAD
+```
+
+- outputs the full SHA-1 hash of the tag named "v1.0.0" :
+
+```
+$git rev-parse v1.0.0
+```
+
+-  outputs the symbolic name of the current branch :
+
+```
+$git rev-parse --symbolic-full-name HEAD
+```
+
+</details>
+
+2. Ignore whitespace changes when searching history :
 
 ```
 $git blame -w
 ```
 
-- Displays the history of a file and indicates who each line was changed by:
+3. Displays the history of a file and indicates who each line was changed by:
 
 ```
 $git blame -w -M3
