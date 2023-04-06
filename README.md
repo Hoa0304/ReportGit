@@ -94,7 +94,7 @@ $git rev-parse --symbolic-full-name HEAD
 
 </details>
 
--  Ignore whitespace changes when searching history :
+- Ignore whitespace changes when searching history :
 
 ```
 $git blame -w
