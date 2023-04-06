@@ -94,14 +94,13 @@ $git rev-parse --symbolic-full-name HEAD
 
 </details>
 
-
-1. Ignore whitespace changes when searching history.
+-  Ignore whitespace changes when searching history :
 
 ```
 $git blame -w
 ```
 
-1. Displays the history of a file and indicates who each line was changed by:
+- Displays the history of a file and indicates who each line was changed by:
 
 ```
 $git blame -w -M3
