@@ -1,110 +1,57 @@
 # Git for Programmers
-__04/04__/2023
-## Chapter 11
-### Finding a Broken Commit: Bisect and Blame
-#### BISECT
+__10/04__/2023
+## Chapter 12
+### Fixing Mistakes
+
 
 
 <details>
-<summary>Start the search process</summary>
+<summary>Amend the last commit</summary>
 
+- Add changes to the previous commit
+- Edit the commit message and add any additional changes.
 ```
-$git bisect start
-```
-
--  Then, you need to specify the current last bad commit with the command :
-
-```
-$git bisect bad
+$git commit --amend
 ```
 
-- Next, you need to specify a previous commit that you know for sure is working properly with the command :
+- If you don't want to edit the message when you add the files, enter:
 
 ```
-$git bisect good
+$git commit --amend --no-edit
+```
+
+</details>
+
+<details>
+<summary>Undo a commit</summary>
+
+- Creates a new commit that undoes the changes made in a previous commit.
+
+```
+$git revert
 ```
 
 </details>
 
 
-#### BLAME
-
-1. File history search
-
-- To search for information about the commit you want to find the history of that file.
-
 <details>
-<summary>git log</summary>
+<summary>Reset to a previous commit</summary>
 
-- This command displays the history of commits and allows you to view information about different commits.
+- Go back to a previous commit and discard any changes made since then
 
-
-</details>
-
-<details>
-<summary>git branch</summary>
-
-- This command displays a list of branches in Git's repository.
-
-</details>
-
-<details>
-<summary>git show</summary>
-
-- This command displays information about a specific commit.
+```
+$git reset
+```
+- This will remove any commits made after the specified commit and reset the branch to that commit.
 
 </details>
 
 
-<details>
-<summary>git diff</summary>
+<summary>Branch name change</summary>
 
-- This command displays the difference between two commits or between two versions of the same file.
 
+```
+$git branch -m <currentName> <desiredName>
+```
 
 </details>
-
-<details>
-<summary>git rev-parse</summary>
-
-```
-
-- outputs the full SHA-1 hash of the current commit :
-
-```
-$git rev-parse HEAD
-```
-
-- outputs the abbreviated SHA-1 hash of the current commit :
-
-```
-$git rev-parse --short HEAD
-```
-
-- outputs the full SHA-1 hash of the tag named "v1.0.0" :
-
-```
-$git rev-parse v1.0.0
-```
-
--  outputs the symbolic name of the current branch :
-
-```
-$git rev-parse --symbolic-full-name HEAD
-```
-
-```
-</details>
-
-
-1. Ignore whitespace changes when searching history.
-
-```
-$git blame -w
-```
-
-1. Displays the history of a file and indicates who each line was changed by:
-
-```
-$git blame -w -M3
-```
