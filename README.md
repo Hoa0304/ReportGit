@@ -17,7 +17,7 @@ $git commit --amend
 - If you don't want to edit the message when you add the files, enter:
 
 ```
-$git --amend --no-edit
+$git commit --amend --no-edit
 ```
 
 </details>
