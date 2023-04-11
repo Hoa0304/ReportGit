@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+sdfsgfqatrweyyuuol
 namespace trainningCong.git.ReportGit.Practice
 {
     public static class Program
@@ -16,4 +16,5 @@ namespace trainningCong.git.ReportGit.Practice
             $"Modulus 23%4 is {calculator.Modulus(23, 4)}");
         }
     }
+    akdhfhajfkjagbkjbfgja73
 }
