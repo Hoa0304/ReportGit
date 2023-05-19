@@ -1,107 +1,21 @@
+# TITO_Trainning_Git
 # Git for Programmers
-__28/03__/2023
-## Chapter 7
-### Tags 
+__11/04__/2023
+## Chapter 13
+### Next Steps
 
-<details>
-<summary>Lightweigh tag</summary>
+1. Creating a new branch: Use the git branch command to create a new branch for your work. You can then use git checkout to switch to that branch.
 
-1. Temporary tag is something that cannot be changed. 
-1. It is possible to set a name.
-- Lightweight tag is mainly used in temporary local workspaces.
-</details>
+2. Making changes: Make changes to your files as needed. You can use git add to stage changes for commit.
 
-<details>
-<summary>Annotated tag</summary>
+3. Committing changes: Use git commit to commit your changes to the current branch.
 
-1. It is possible to attach the name and email of the person who performed and the date.
-1. It is possible to set a name.
-1. It is possible to attach a comment.
-1. It is possible to attach a signature.
-- Annotated tag becomes important when there is a plan to mark important commits. It is usually used to mark commits used for release and can also add annotations alongside.
-</details>
+4. Pushing changes: Use git push to push your changes to a remote repository.
 
-#### Use tags
+5. Pulling changes: Use git pull to pull changes from a remote repository into your local repository.
 
+6. Merging changes: Use git merge to merge changes from one branch into another.
 
+7. Resolving conflicts: If there are conflicts between different versions of a file, use git mergetool to resolve them.
 
-
-
-<details>
-<summary>Add Lightweigh tag</summary>
-
-<details>
-<summary>Add tag</summary>
-
-```
- $ git tag < tagname >
-```
-
-</details>
-
-<details>
-<summary>Tag command without parameters</summary>
-
-- Show tag list
-
-```
- $ git tag 
-```
-</details>
-
-
-<details>
-<summary>Show history  </summary>
-
-``` 
-$ git log --decorate
-```
-
-</details>
-
-</details>
-
-<details>
-<summary>Add Annotated tag</summary>
-
-<details>
-<summary>Add tag</summary>
-
-```
- $ git tag -a < tagname >
-```
-
-</details>
-
-<details>
-<summary>Just created a tag and added a comment</summary>
-
-``` 
-$ git tag -am "commit" < tagname >
-```
-
-</details>
-
-
-<details>
-<summary>Displays a list of tags and comments.</summary>
-
-``` 
-$ git tag -n
-```
-
-</details>
-
-
-
-</details>
-
-
-<details>
-<summary>Delete tag</summary>
-
-``` 
-$ git tag -d < tagname >
-```
-
-</details>
+8. Reverting changes: Use git revert to undo changes made in a previous commit.
